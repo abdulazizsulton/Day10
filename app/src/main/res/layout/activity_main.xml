@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitlee"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#87A922"
+        android:gravity="center"
+        android:text=" ABDUL AZIZ SULTON "
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvTipee"
+        android:text=" Tipe Pelanggan  "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/btnRadiogroupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnPajero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Pajero"
+            android:background="#F9F07A"/>
+
+        <RadioButton
+            android:id="@+id/btnAlphard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Alphard"
+            android:background="#B5C0D0"/>
+
+        <RadioButton
+            android:id="@+id/btnInova"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Inova"
+            android:background="#C7C8CC"/>
+
+        <RadioButton
+            android:id="@+id/btnBrio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Brio"
+            android:background="#C7C8CC"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDiskon"
+        android:text=" Outside City "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RadioGroup
+        android:id="@+id/btnRadiogrouppp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Inside City"
+            android:background="#F9F07A"/>
+
+        <RadioButton
+            android:id="@+id/btnOutside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Outside City"
+            android:background="#B5C0D0"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvRent"
+        android:text=" Day Of Rent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/etKodebarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:hint="Total day"
+            android:layout_marginTop="30dp"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRent"
+        android:layout_width="207dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Rent" />
+
+</LinearLayout>
